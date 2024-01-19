@@ -30,11 +30,11 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       Align(
                           alignment: Alignment.bottomRight,
-                          child: Text(userInput.toString(), style: TextStyle(fontSize: 30, color: Colors.white),)),
-                      SizedBox(
+                          child: Text(userInput.toString(), style: const TextStyle(fontSize: 30, color: Colors.white),)),
+                      const SizedBox(
                         height: 15,
                       ),
-                      Text(answer.toString(), style: TextStyle(fontSize: 30, color: Colors.white),),
+                      Text(answer.toString(), style: const TextStyle(fontSize: 30, color: Colors.white),),
                     ],
                   ),
                 ),
@@ -64,7 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                           });
                         },),
-                        MYButton(title: '/', color: Color(0xffffa00a),onPress: (){
+                        MYButton(title: '/', color: const Color(0xffffa00a),onPress: (){
                           userInput += '/';
                           setState(() {
 
@@ -92,7 +92,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                           });
                         },),
-                        MYButton(title: 'x', color: Color(0xffffa00a),onPress: (){
+                        MYButton(title: 'x', color: const Color(0xffffa00a),onPress: (){
                           userInput += 'x';
                           setState(() {
 
@@ -120,7 +120,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                           });
                         },),
-                        MYButton(title: '-', color: Color(0xffffa00a),onPress: (){
+                        MYButton(title: '-', color: const Color(0xffffa00a),onPress: (){
                           userInput += '-';
                           setState(() {
 
@@ -148,7 +148,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                           });
                         },),
-                        MYButton(title: '+', color: Color(0xffffa00a),onPress: (){
+                        MYButton(title: '+', color: const Color(0xffffa00a),onPress: (){
                           userInput += '+';
                           setState(() {
 
@@ -176,7 +176,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                           });
                         },),
-                        MYButton(title: '=', color: Color(0xffffa00a),onPress: (){
+                        MYButton(title: '=', color: const Color(0xffffa00a),onPress: (){
                           equalPress();
                           setState(() {
                             
@@ -188,7 +188,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
 
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
             ],
